@@ -9,7 +9,9 @@ function Productname() {
 
   return (
     <>
-      <label htmlFor="name">상품명</label>
+      <label className="productWord" htmlFor="name">
+        상품명
+      </label>
       <form className="productname">
         <input value={name} onChange={ProductNameChange}></input>
       </form>

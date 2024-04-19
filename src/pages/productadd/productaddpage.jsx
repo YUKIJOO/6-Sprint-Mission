@@ -1,7 +1,11 @@
 import React, { useRef, useState } from "react";
 import "./product.css";
+import Productname from "./productname";
+import Productintroduction from "./productintroduction";
+import ProductPrice from "./productprice";
+import ProductTag from "./producttag";
 
-function productadd() {
+function productaddpage() {
   const [product, setProduct] = useState({ image: "" });
 
   const inputImgRef = useRef(null);
@@ -25,7 +29,7 @@ function productadd() {
   return (
     <>
       <productImg>
-        <label htmlFor="=image">상품이미지</label>
+        <label htmlFor="image">상품이미지</label>
         <ProductImgInputContainer>
           <input
             type="file"
@@ -47,7 +51,12 @@ function productadd() {
           )}
         </ProductImgInputContainer>
       </productImg>
-      <productname></productname>
+      <Productname />
+      <Productintroduction />
+      <ProductPrice />
+      <ProductTag />
     </>
   );
 }
+
+export default productaddpage;

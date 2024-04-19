@@ -1,6 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { freewriter, login, market, pandamarket } from "./pages";
+import freewriter from "./pages";
+import market from "./pages";
+import login from "./pages";
+import pandamarket from "./pages";
 import Header from "./componenets/Header/Header";
 
 function App() {
