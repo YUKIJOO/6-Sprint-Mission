@@ -13,7 +13,12 @@ function ProductPrice() {
         판매가격
       </label>
       <form className="productprice">
-        <input value={price} onChange={ProductPriceChange}></input>
+        <input
+          type="text"
+          value={price}
+          placeholder="판매 가격을 입력해주세요"
+          onChange={ProductPriceChange}
+        ></input>
       </form>
     </>
   );

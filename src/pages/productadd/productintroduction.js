@@ -14,7 +14,9 @@ function Productintroduction() {
       </label>
       <form className="producintroduction">
         <input
+          type="text"
           value={introduction}
+          placeholder="상품 소개를 입력해주세요"
           onChange={ProductIntroductionChange}
         ></input>
       </form>

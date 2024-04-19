@@ -13,7 +13,12 @@ function Productname() {
         상품명
       </label>
       <form className="productname">
-        <input value={name} onChange={ProductNameChange}></input>
+        <input
+          type="text"
+          value={name}
+          placeholder="상품명을 입력해주세요"
+          onChange={ProductNameChange}
+        ></input>
       </form>
     </>
   );

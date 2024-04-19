@@ -14,7 +14,12 @@ function ProductTag() {
         판매가격
       </label>
       <form className="producttag">
-        <input value={tag} onChange={ProductTagChange}></input>
+        <input
+          type="text"
+          value={tag}
+          placeholder="상품명을 입력해주세요"
+          onChange={ProductTagChange}
+        ></input>
       </form>
     </>
   );
